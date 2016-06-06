@@ -5,13 +5,15 @@ public class BinarySearchTree {
 		NonEmptyBst<Integer> trial = new NonEmptyBst<Integer>(20);
 		System.out.println(trial.isEmpty());
 		System.out.println(trial.cardinality());
-		trial.add(15);
+		trial.add(22);
 		trial.add(25);
-		trial.add(24);
+		trial.add(27);
 		System.out.println("finding 20 in tree: "+ trial.member(20));
+		System.out.println("finding 22 in tree: "+ trial.member(22));
 		System.out.println("finding 25 in tree: "+ trial.member(25));
-		System.out.println("finding 24 in tree: "+ trial.member(24));
-		System.out.println("finding 29 in tree: "+ trial.member(29));
+		System.out.println("finding 27 in tree: "+ trial.member(27));
+		
+		System.out.println(trial.cardinality());
 
 
 	}

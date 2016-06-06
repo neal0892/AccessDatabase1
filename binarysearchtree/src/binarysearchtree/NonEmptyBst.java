@@ -25,6 +25,7 @@ public class NonEmptyBst<D extends Comparable> implements Tree<D> {
 		return 1 + left.cardinality() + right.cardinality();
 	}
 
+	@SuppressWarnings("unchecked")
 	public boolean member(D elt) {
 		if (data.equals(elt))
 			return true;
@@ -37,11 +38,12 @@ public class NonEmptyBst<D extends Comparable> implements Tree<D> {
 
 	}
 
+	@SuppressWarnings("unchecked")
 	public NonEmptyBst<D> add(D elt){
 		if(data.equals(elt))
 			return this;
 		else{
-			if(elt.compareTo(data)<0){
+			if (elt.compareTo(data) < 0){
 				System.out.println(elt+" is lesser than "+ data);
 				return left.add(elt);
 			}
