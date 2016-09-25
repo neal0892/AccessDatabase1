@@ -60,6 +60,7 @@ public class SignIn extends HttpServlet {
 			session.setAttribute("name", name);
 			session.setAttribute("id", ID);
 			response.sendRedirect("success.jsp");
+			System.out.println("Intentional change /ignore");
 		}
 		else
 			response.sendRedirect("index.jsp");

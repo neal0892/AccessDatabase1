@@ -12,9 +12,9 @@
 <title>Successful login</title>
 </head>
 <body>
-<div class="navbar-fixed">
+<div class="navbar-fixed"> 
 <nav>
-<div class="nav-wrapper">
+<div class="nav-wrapper"> 
 <a class="brand-logo" href="http://www.twitter.com">Twitter</a>
 <ul class="right">
 <li><a href="#">notifications</a></li>
@@ -25,7 +25,7 @@
 </nav>
 </div>
 <div class="container">
-<div class="card-panel teal lighten-2"><h4>Welcome <%=session.getAttribute("name") %></h4></div><br>
+<div class="card-panel teal lighten-2"><h4>Welcome <%=session.getAttribute("name") %></h4></div><br> <!--jstl to get name -->
 
 <div class="row">
 <form class="col s12" action="Article" method="post">
