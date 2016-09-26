@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/Article")
 public class Article extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+       //ADD A SUPPRESS WARNING ANNOTATION HERE
     /**
      * @see HttpServlet#HttpServlet()
      */
